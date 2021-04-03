@@ -66,9 +66,10 @@ FEED_URI = "reddit.csv"
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'ourfirstscraper.pipelines.OurfirstscraperPipeline': 300,
-#}
+# Lower the number of pipeline, the higher the priority
+ITEM_PIPELINES = {
+   'ourfirstscraper.pipelines.OurfirstscraperPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
