@@ -1,5 +1,5 @@
 import scrapy
-
+from ..items import OurfirstscraperItem
 
 class RedditbotSpider(scrapy.Spider):
     name = 'redditbot'
