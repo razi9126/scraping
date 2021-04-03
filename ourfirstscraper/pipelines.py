@@ -11,5 +11,5 @@ from itemadapter import ItemAdapter
 class OurfirstscraperPipeline:
     ## This function gets called each time we yield a value in our main code
     def process_item(self, item, spider):
-
+        print("The pipeline code is called. The votes are: ", item["votes"])
         return item
